@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KUYASA</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.ico">
+        <!-- Apple Touch Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <!-- Other Meta Tags -->
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- JavaScript -->
+        <script src="./script.js"></script>
+
+  
+    <style>
+        .custom_body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .custom_container {
+            width: 600px;
+            background-color: white;
+            padding: 38px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, .1);
+            border-radius: 20px;
+        }
+
+        .custom_tab_box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid rgba(229, 229, 229);
+        }
+
+        .custom_tab_box .custom_tab_btn.active {
+            color: #7360ff;
+        }
+
+        .custom_tab_box .custom_tab_btn {
+            font-size: 18px;
+            font-weight: 600;
+            color: #919191;
+            background: none;
+            border: none;
+            padding: 18px;
+            cursor: pointer;
+        }
+
+        .custom_content_box {
+            padding: 20px;
+        }
+
+        .custom_content_box .custom_content {
+            display: none;
+        }
+
+        .custom_content_box .custom_content h2 {
+            margin-bottom: 10px;
+        }
+
+        .custom_content_box .custom_content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="custom_body">
+    <nav class="navbar">
+        <a href="/" class="logo"><img src="/assets/images/kuyasa projects RED.svg" alt="Your Logo"></a>
+        <div class="nav-links">
+            <a href="/link1">Home</a>
+            <a href="/link2">Mission</a>
+            <a href="/link3">About</a>
+            <a href="/link4">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>   
+<div class="custom_container">
+    <div class="custom_tab_box">
+        <button class="custom_tab_btn">Home</button>
+        <button class="custom_tab_btn">About</button>
+        <button class="custom_tab_btn">Blogs</button>
+        <button class="custom_tab_btn">Contact us</button>
+    </div>
+    <div class="custom_content_box">
+        <div class="custom_content">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Iusto optio blanditiis quasi sequi cumque aliquid ea nesciunt
+                perspiciatis, ducimus similique itaque, esse vel asperiores
+                pariatur reiciendis ipsum dolores repellat iste.
+            </p>
+        </div>
+        <div class="custom_content">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Iusto optio blanditiis quasi sequi cumque aliquid ea nesciunt
+                perspiciatis, ducimus similique itaque, esse vel asperiores
+                pariatur reiciendis ipsum dolores repellat iste.
+            </p>
+        </div>
+        <div class="custom_content">
+            <h2>Blogs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Iusto optio blanditiis quasi sequi cumque aliquid ea nesciunt
+                perspiciatis, ducimus similique itaque, esse vel asperiores
+                pariatur reiciendis ipsum dolores repellat iste.
+            </p>
+        </div>
+        <div class="custom_content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Iusto optio blanditiis quasi sequi cumque aliquid ea nesciunt
+                perspiciatis, ducimus similique itaque, esse vel asperiores
+                pariatur reiciendis ipsum dolores repellat iste.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-section">
+        <h6>TRAVEL EXPERIENCES</h6>
+        <ul>
+            <li>Volunteer experiences</li>
+            <li>Internship experiences</li>
+            <li>Travel experiences</li>
+            <li>School groups</li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h6>ABOUT GO WITH KHAYA</h6>
+        <ul>
+            <li>About us</li>
+            <li>Latest news</li>
+            <li>FAQ</li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h6>BOOK YOUR TRIP</h6>
+        <ul>
+            <li>Book now</li>
+            <li>Chat to a coordinator</li>
+            <li>Find Go With Khaya HQ on map</li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h6>ABOUT GO WITH KHAYA</h6>
+        <p>
+            At Go With Khaya, we make our volunteers feel that they belong. If you choose Go With Khaya to organize your volunteering experience, you will feel secure and well-informed. You will also feel that you belong to the project you decide to work with, as Go With Khaya fits the right people to the right projects.
+        </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://za.pinterest.com/" target="_blank" rel="noopener"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+<section class="footer-info">
+    ©  2023 | Developed by Munashe
+</section>
+
+</body>
+</html>
+<script>
+    const tabs = document.querySelectorAll('.custom_tab_btn');
+    const all_content = document.querySelectorAll('.custom_content');
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(tab => { tab.classList.remove('active') });
+            tab.classList.add('active');
+            
+            // Hide all content boxes
+            all_content.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show the corresponding content box
+            all_content[index].classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>

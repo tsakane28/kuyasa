@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUYASA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.ico">
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Other Meta Tags -->
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="/" class="logo"><img src="/assets/images/kuyasa projects RED.svg" alt="Your Logo"></a>
+        <div class="nav-links">
+            <a href="/link1">Home</a>
+            <a href="/link2">Mission</a>
+            <a href="/link3">About</a>
+            <a href="/link4">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <section class="landing-section">
+        <div class="landing-content">
+            <h4></h4>
+            <h1>STANDING STRONG FOR WOMEN AND GIRLS WITH VOLUNTEERING</h1>
+            <p>We run our projects and volunteer programme to empower women and girls in the local communities in Malawi
+                "the warm heart of Africa and we also offer travel experiences across the country. To experience diverse
+                culture and different type of local foods.</p>
+            <button>Book Here</button>
+        </div>
+    </section>
+    <section class="news-section">
+        <h6>OUR PROGRAMS</h6>
+        <h1>VOLUNTEERING & TRAVEL</h1>
+    </section>
+
+    <section class="card-section">
+        <div class="card">
+            <img src="duck.webp" alt="Avatar" class="card-image">
+            <div class="card-container">
+                <h4><b>Volunteer Experience</b></h4>
+                <p>Volunteering in Malawi is one of the best experiences. We are committed to empowering women and girls
+                    through education, sport, and agriculture.</p>
+                <!-- Use a button or a tag for better accessibility -->
+                <button class="see-more">See More</button>
+                <div class="more-info">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h4><b>Volunteering Projects</b></h4>
+                        <p>We have initiated volunteer programs aimed at supporting local communities. Our commitment is
+                            reflected not just in our words, but more significantly, in our proactive efforts to assist
+                            communities in need.</p>
+                        <div class="volunteer-projects-container">
+                            <div class="volunteer-project" id="sports-project">
+                                <h1>Sports Projects</h1>
+                                <img src="duck.webp" alt="" style="width: 250px; height: 250px;">
+                            </div>
+                            <div class="volunteer-project" id="educational-project">
+                                <h1>Educational Projects</h1>
+                                <img src="duck.webp" alt="" style="width: 250px; height: 250px;">
+                            </div>
+                            <div class="volunteer-project" id="agricultural-project">
+                                <h1>Agricultural Projects</h1>
+                                <img src="duck.webp" alt="" style="width: 250px; height: 250px;">
+                            </div>
+                        </div>
+                        <!-- Popup container -->
+                        <div id="popup" class="popup">
+                            <!-- Content of the popup will be dynamically filled by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="duck.webp" alt="Avatar" class="card-image">
+            <div class="card-container">
+                <h4><b>Travel Experiences</b></h4>
+             
+                    <h4 class="see-more">See More</h4>
+                    <div class="more-info">
+                        <!-- Additional information goes here -->
+                        <p>This is more information about internship experiences...</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="news-section">
+        <h6>LEARN MORE</h6>
+        <h1>KHAYA’S LATEST NEWS</h1>
+    </section>
+    <section class="card-section-news">
+        <div class="card-news">
+            <img src="duck.webp" alt="Avatar" class="card-image">
+            <div class="card-container">
+                <h4><b>VOLUNTEERING OR COMMANDEERING?</b></h4>
+                <p>With so many people looking for unique travel experiences around the globe there is a big pull
+                    towards volunteering experiences, working with youth and wildlife. This change from unknown ways of
+                    traveling towards a more mainstream accessibility to short term...</p>
+            </div>
+        </div>
+        <div class="card-news">
+            <img src="duck.webp" alt="Avatar" class="card-image">
+            <div class="card-container">
+                <h4><b>WHAT TO KNOW IF YOUR CHILD WANTS TO VOLUNTEER IN AFRICA</b></h4>
+                <p>ADVICE FOR PARENTS Your kid has just announced that he/she is contemplating to go on a volunteering
+                    trip abroad next summer. Do not panic! Breathe and take a moment to think about the possible
+                    benefits. Volunteering abroad can be a life-changing experience. Your child...</p>
+            </div>
+        </div>
+        <div class="card-news">
+            <img src="duck.webp" alt="Avatar" class="card-image">
+            <div class="card-container">
+                <h4><b>FROM KHAYA TO GO WITH KHAYA</b></h4>
+                Rebranding a company that has existed for almost 15 years takes some serious considerations and let me
+                tell you a bit more of the why.... Khaya started in 2005 when I moved to South Africa from the
+                Netherlands and the idea came to me to assist international students...</p>
+            </div>
+        </div>
+    </section>
+    <section class="volunteer-world">
+        <div class="volunteer-world-section">
+            <div class="volunteer-world-section-img">
+                <img src="./volunteer-world.webp" alt="">
+            </div>
+            <div class="volunteer-world-section-right">
+                <h6>LEARN MORE</h6>
+                <h1>RESPONSIBLE TRAVEL</h1>
+                <p>Volunteering can be an incredibly enriching and educational experience. The trick to getting the most
+                    out of your chosen volunteer project is to maximise what you put in. Quite simply, your focus should
+                    not only be on you, the volunteer – it should be on those you want to help and support; whether you
+                    are working in childcare, conservation, community building, or whichever organization you choose.
+                </p>
+                <button>BOOK EXPERIENCE NOW</button>
+            </div>
+        </div>
+    </section>
+    <section class="news-section">
+        <h6>LEARN MORE</h6>
+        <h1>WE’RE RATED HIGHLY</h1>
+    </section>
+    <section class="card-section-rating">
+        <div class="card-rating">
+            <img src="./five-star.webp" alt="">
+            <div class="card-container">
+                <p>There is not one specific thing but many things that i enjoyed during my stay in South Africa. I
+                    actually enjoyed every single moment of the experience. The weekends away were also so good. I loved
+                    the project and the work we done.</p>
+            </div>
+        </div>
+        <div class="card-rating">
+            <img src="./five-star.webp" alt="">
+            <div class="card-container">
+                <p>To look at the different lives of people and children in the townships and compare them to others. To
+                    help the children and have fun with them and others. I really enjoyed Addo, the meals and the
+                    wildlife.</p>
+            </div>
+        </div>
+        <div class="card-rating">
+            <img src="./five-star.webp" alt="">
+            <div class="card-container">
+                <p>I enjoyed the weekend outing trips and tours that we went on with all the other volunteers including
+                    Jeff and Arlene. The company did well when arranging this. I also met so many nice people.</p>
+            </div>
+        </div>
+        <div class="card-rating">
+            <img src="./five-star.webp" alt="">
+            <div class="card-container">
+                <p>All the people were friendly and made my four weeks very enjoyable. I enjoyed experiencing a
+                    different culture with new people. I really appreciate the different trips that Jeff and Arlene
+                    organised for us.</p>
+            </div>
+        </div>
+    </section>
+    <section class="subscription-form-section">
+        <h6>FEELING OVERWHELMED BY ALL THE VOLUNTEER INFO OUT THERE?</h6>
+        <h1>GET OUR FREE VOLUNTEER INFO GUIDE</h1>
+        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+        <form class="subscription-form">
+            <label for="firstName">First Name <span class="asterisk">*</span></label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="email">Email Address <span class="asterisk">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <section class="home_go-section">
+        <div class="home_go-section-content">
+            <h6>START TODAY</h6>
+            <h1>DON’T MISS OUT.</h1>
+            <h1>CONTACT US TODAY</h1>
+            <button>START ADVENTURE</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-section">
+            <h6>TRAVEL EXPERIENCES</h6>
+            <ul>
+                <li>Volunteer experiences</li>
+                <li>Internship experiences</li>
+                <li>Travel experiences</li>
+                <li>School groups</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h6>ABOUT GO WITH KHAYA</h6>
+            <ul>
+                <li>About us</li>
+                <li>Latest news</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h6>BOOK YOUR TRIP</h6>
+            <ul>
+                <li>Book now</li>
+                <li>Chat to a coordinator</li>
+                <li>Find Go With Khaya HQ on map</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h6>ABOUT GO WITH KHAYA</h6>
+            <p>
+                At Go With Khaya, we make our volunteers feel that they belong. If you choose Go With Khaya to organize
+                your volunteering experience, you will feel secure and well-informed. You will also feel that you belong
+                to the project you decide to work with, as Go With Khaya fits the right people to the right projects.
+            </p>
+            <div class="textwidget custom-html-widget">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"><i class="fab fa-youtube"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="https://za.pinterest.com/" target="_blank" rel="noopener"><i class="fab fa-pinterest-p"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-info">
+        © 2023 | Developed by Munashe
+    </section>
+</body>
+
+</html>
+
+<script>
+    function toggleMenu() {
+        var links = document.querySelector('.nav-links');
+        links.classList.toggle('active');
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        const seeMoreButtons = document.querySelectorAll('.see-more');
+        // Get all the close buttons
+        const closeButtons = document.querySelectorAll('.close-button');
+
+        seeMoreButtons.forEach((button, index) => {
+            button.addEventListener('click', function () {
+                // Find the corresponding more-info div and show it
+                const moreInfo = button.nextElementSibling;
+                moreInfo.style.display = 'block';
+            });
+        });
+
+        closeButtons.forEach(button => {
+            button.onclick = function () {
+                var modal = this.closest('.more-info');
+                modal.style.display = "none";
+            }
+        });
+
+        // Optional: Click outside to close
+        window.onclick = function (event) {
+            if (event.target.classList.contains('more-info')) {
+                event.target.style.display = "none";
+            }
+        }
+    });
+
+
+
+
+
+
+
+    // Function to show the popup with content
+    function showPopup(content) {
+        var popup = document.getElementById('popup');
+        popup.innerHTML = content + '<br><button onclick="closePopup()">Close</button>';
+        popup.style.display = 'block';
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'none';
+    }
+
+    // Event listeners for each project with images, headings, and paragraphs
+    document.getElementById('sports-project').addEventListener('click', function () {
+    showPopup('<h1>Scheme</h1>'
+        + createImageGallery([
+            { filename: './duck.webp', sportName: '<a href="./football.html">Football</a>' },
+            { filename: './duck.webp', sportName: 'Basketball' },
+            { filename: './duck.webp', sportName: 'Tennis' },
+            { filename: './duck.webp', sportName: 'Swimming' },
+            { filename: './duck.webp', sportName: 'Cycling' }
+        ])
+        + '<p>Transforming lives of girls and children through sport in poor communities can be rewarding and impactful. Endeavor volunteering as a sport coach and share your passion for sports.</p>');
+});
+
+
+    document.getElementById('educational-project').addEventListener('click', function () {
+        showPopup('<h1>Educational Projects</h1>'
+            + '<p>This is a description of the Educational Projects.</p>'
+            + createImageGallery([
+                'education1.jpg', 'education2.jpg', 'education3.jpg', 'education4.jpg', 'education5.jpg'
+            ]));
+    });
+
+    document.getElementById('agricultural-project').addEventListener('click', function () {
+        showPopup('<h1>Agricultural Projects</h1>'
+            + '<p>This is a description of the Agricultural Projects.</p>'
+            + createImageGallery([
+                'agriculture1.jpg', 'agriculture2.jpg', 'agriculture3.jpg', 'agriculture4.jpg', 'agriculture5.jpg'
+            ]));
+    });
+
+    // Helper function to create HTML string for an image gallery with sport names, displayed horizontally
+    function createImageGallery(images) {
+        const galleryHTML = images.map(image =>
+            `<div style="flex: 1; text-align: center;"><img src="${image.filename}" alt="" style="width: 100px; height: 100px; margin: 5px;"><br>${image.sportName}</div>`
+        ).join('');
+
+        return `<div style="display: flex; justify-content: center; flex-wrap: wrap;">${galleryHTML}</div>`;
+    }
+
+</script>

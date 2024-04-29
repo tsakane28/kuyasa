@@ -1,0 +1,630 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    position: fixed; /* Set the navbar position to fixed */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make it span the full width of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #ffffff;
+    padding-right: 20px;
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.09);
+    transition: top 0.3s; /* Add a smooth transition for better user experience */
+}
+
+.navbar .logo {
+    margin-right: auto;
+    margin-left: 60px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .logo img {
+    height: 100px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 16px;
+}
+
+.nav-links.active {
+    display: block;
+}
+
+.icon {
+    display: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+.card-section {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+.card-section-news {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+.card-section-rating {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: calc(100% / 4 - 30px ); /* Adjust based on how many cards per row you want, minus some margin */
+}
+.card-news {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: calc(100% / 3 - 80px ); /* Adjust based on how many cards per row you want, minus some margin */
+}
+.card-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: calc(100% / 3 - 80px ); /* Adjust based on how many cards per row you want, minus some margin */
+}
+.card-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    padding: 10px;
+    width: calc(100% / 4 - 100px ); /* Adjust based on how many cards per row you want, minus some margin */
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image {
+    height: 200px;
+    width: 100%;
+}
+.card-rating img {
+    height: 40px;
+    width: auto;
+}
+
+.card-container {
+    padding: 2px 16px;
+    text-align: center;
+}
+/* News Section Styling */
+.news-section {
+    margin-top: 80px; /* Adjust based on the height of your navbar */
+    padding: 20px;
+    text-align: center;
+  }
+  .landing-section {
+    text-align: center; /* Center align the text for a modern look */
+    width: 100%; /* Ensures section spans full width */
+    margin: 20px auto; /* Adjust margin for spacing between header and landing section */
+    padding: 150px 0; /* Adjusted padding for the content */
+    background-image: url('./outdoor.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your background image */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    position: relative; /* Required for the absolute positioning of the pseudo-element */
+}
+
+.landing-section::before {
+    content: ""; /* Required for a pseudo-element */
+    position: absolute; /* Position relative to the landing-section */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure it's above the background image but below the text content */
+}
+
+/* Ensure content is above the overlay */
+.landing-section * {
+    position: relative; /* Make text content appear above the overlay */
+    z-index: 2;
+}
+
+
+.landing-content {
+    margin-left: 300px; /* Adjust padding to add space around the content */
+    margin-right: 300px; /* Adjust padding to add space around the content */
+}
+
+
+
+.landing-section h4 {
+    color: #CE1127; /* Muted color for the subheading */
+    text-transform: uppercase; /* Capitalize letters for emphasis */
+    margin-bottom: 15px; /* Spacing below the subheading */
+    font-weight: bold; /* Avoids overly bold subheadings */
+}
+
+.landing-section h1 {
+    color: #ffffff; /* Dark color for high contrast and readability */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.landing-section p {
+    color: #ffffff; /* Medium contrast for the paragraph for easier reading */
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 30px; /* Spacing below the paragraph */
+}
+
+.landing-section button {
+    background-color: #CE1127; /* Bright blue background for the button */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    padding: 10px 50px; /* Padding inside the button */
+    font-size: 13px; /* Increase font size for better readability */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    border-radius: 35px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-weight: bold;
+}
+
+.landing-section button:hover {
+    background-color: #CE1127; /* Darker blue on hover for visual feedback */
+}
+.volunteer-world-section {
+    display: flex;
+    justify-content: space-between; /* Horizontally align items with space between */
+    align-items: center; /* Vertically center items */
+    margin: 100px;
+}
+
+.volunteer-world-section-img {
+    flex: 0 0 40%; /* Set flex-grow, flex-shrink, and flex-basis */
+}
+
+.volunteer-world-section-right {
+    flex: 0 0 55%; /* Set flex-grow, flex-shrink, and flex-basis */
+}
+.volunteer-world-section-right h6{
+    color: #CE1127;
+}
+.news-section h6{
+    color: #CE1127;
+}
+.home_go-section-content h6{
+    color: #CE1127;
+}
+.volunteer-world-section-right button {
+    background-color: #CE1127; /* Bright blue background for the button */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    padding: 10px 50px; /* Padding inside the button */
+    font-size: 13px; /* Increase font size for better readability */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    border-radius: 35px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-weight: bold;
+}
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust the width as needed */
+  }
+  .subscription-form-section{
+    margin: 100px;
+  }
+.indicates-required {
+    text-align: right;
+    font-size: 11px;
+
+}
+  .asterisk{
+    color: #e85c41;
+    font-size: 150%;
+    font-weight: normal;
+    position: relative;
+    top: 5px;
+  }
+  .subscription-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #868686;
+  }
+  
+  .subscription-form input {
+    margin-top: 5px;
+    line-height: 2;
+    padding: 0 5px;
+  }
+  
+  .subscription-form button {
+    background-color: #CE1127; /* Bright blue background for the button */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    padding: 10px 10px; /* Padding inside the button */
+    font-size: 13px; /* Increase font size for better readability */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    border-radius: 35px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin: 30px 0px;
+    max-width: 160px;
+    font-weight: bold;
+}
+.subscription-form button:hover {
+    background-color: #CE1127; /* Darker blue on hover for visual feedback */
+}
+.home_go-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will make the section take the full height of the viewport */
+    text-align: center; /* Centers the text inside the content div */
+    background-image: url('./sunset.jpg'); /* Your background image */
+    background-size: cover; /* Ensure the background covers the full section */
+    background-position: center; /* Center the background image */
+    position: relative; /* Required for positioning the pseudo-element */
+}
+
+.home_go-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensures the overlay is above the background image */
+}
+
+/* Adjust z-index for child elements to ensure they are visible above the overlay */
+.home_go-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+  .home_go-section button {
+    background-color: #CE1127; /* Bright blue background for the button */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    padding: 10px 50px; /* Padding inside the button */
+    font-size: 16px; /* Increase font size for better readability */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    border-radius: 35px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    animation: shadow-pulse 2s infinite; /* Apply the shadow pulse animation */
+  }
+  .home_go-section-content h1{
+    color: #fff;
+  }
+@keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0px #CE1127;
+    }
+    50% {
+      box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0px #CE1127;
+    }
+  }
+  
+.home_go-section  button:hover {
+    background-color: #CE1127; /* Darker blue on hover for visual feedback */
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1; /* Allows each section to grow and take up equal space */
+    padding: 0 15px; /* Adds some padding inside each section */
+    margin-bottom: 20px; /* Space below each section on smaller screens */
+}
+
+/* Targeting the third .footer-section specifically */
+.footer-section:nth-of-type(4) {
+    flex: 3; /* Makes it take up three times the space compared to the others */
+}
+
+.footer-section h6 {
+    margin-bottom: 10px;
+    color: #CE1127;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Removes default margin */
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.footer-info {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Add padding for spacing */
+}
+.textwidget.custom-html-widget a i {
+    color: #fff; /* White color */
+    margin: 5px;
+}
+
+  
+@media (max-width: 768px) {
+    .card-section {
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto; /* Cards take full width on smaller screens */
+    }
+
+    .card-image, .card-container {
+        width: 100%; /* Image and container take full width, stacking vertically */
+    }
+    .footer-section {
+        /* Ensures that on larger screens, sections are more strictly managed for horizontal layout */
+        flex: 0 0 22%; /* Adjusts the basis to less than 25% to account for padding/margin */
+        max-width: 22%; /* Ensures the content does not exceed this percentage of the footer's width */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: fixed; /* Set the navbar position to fixed */
+        top: 0; /* Position it at the top of the viewport */
+        left: 0; /* Align it to the left */
+        width: 100%; /* Make it span the full width of the viewport */
+        z-index: 1000; /* Ensure it's above other content */
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-color: #ffffff;
+        padding-right: 30px 40px;
+        margin: 0;
+        transition: top 0.3s; /* Add a smooth transition for better user experience */
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        color: #868686;
+    }
+
+    .navbar .logo img {
+        height: 50px;
+    }
+
+    .icon {
+        display: block;
+    }
+}
+.more-info {
+    display: none; /* Initially hidden */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+button.see-more {
+    background: none;
+    border: none;
+    color: #CE1127;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+}
+.volunteer-projects-container {
+    display: flex; /* Make the container a flexbox */
+  }
+  
+  .volunteer-project {
+    width: 33.33%; /* Set equal width for each div (100% / 3) */
+    /* Optional: Add styling for padding, margin, border, etc. */
+    padding: 10px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center text content within each div */
+  }
+  
+  .volunteer-project h1 {
+    margin-bottom: 10px; /* Add some space between heading and image */
+  }
+  
+    /* Style for the pop-up */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 2px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background: #555;
+        color: #fff;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 20px;
+        display: inline-block;
+    }
+    nav a:hover {
+        background: #0779e4;
+    }
+    .content-section {
+        margin: 20px 0;
+    }
+    .content-section h2 {
+        color: #333;
+    }
+    .content-section p {
+        margin: 10px 0;
+    }
+    .gallery img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        float: left;
+    }
+   
+    .about-section {
+        text-align: center; /* Center align the text for a modern look */
+        width: 100%; /* Ensures section spans full width */
+        margin: 20px auto; /* Adjust margin for spacing between header and landing section */
+        top: 200px;
+        padding: 150px; /* Adjusted padding for the content */
+        background-image: url('./outdoor.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your background image */
+        background-size: cover; /* Cover the entire element with the background image */
+        background-position: center; /* Center the background image */
+        position: relative; /* Required for the absolute positioning of the pseudo-element */
+    }
+    
+    .about-section::before {
+        content: ""; /* Required for a pseudo-element */
+        position: absolute; /* Position relative to the landing-section */
+        top: 0;
+        left: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+        z-index: 1; /* Ensure it's above the background image but below the text content */
+    }
+    
+    /* Ensure content is above the overlay */
+    .about-section * {
+        position: relative; /* Make text content appear above the overlay */
+        z-index: 2;
+    }
+    
+    
+    .about-section {
+        margin-left: 300px; /* Adjust padding to add space around the content */
+        margin-right: 300px; /* Adjust padding to add space around the content */
+    }
+    
+    
+    
+    .about-section h4 {
+        color: #CE1127; /* Muted color for the subheading */
+        text-transform: uppercase; /* Capitalize letters for emphasis */
+        margin-bottom: 15px; /* Spacing below the subheading */
+        font-weight: bold; /* Avoids overly bold subheadings */
+    }
+    
+    .about-section h1 {
+        color: #ffffff; /* Dark color for high contrast and readability */
+        margin-bottom: 20px; /* Spacing below the heading */
+    }
+    
+    .about-section p {
+        color: #ffffff; /* Medium contrast for the paragraph for easier reading */
+        line-height: 1.6; /* Increased line height for readability */
+        margin-bottom: 30px; /* Spacing below the paragraph */
+    }
+    
+    .about-section button {
+        background-color: #CE1127; /* Bright blue background for the button */
+        color: #fff; /* White text for contrast */
+        border: none; /* Remove default border */
+        padding: 10px 50px; /* Padding inside the button */
+        font-size: 13px; /* Increase font size for better readability */
+        cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+        border-radius: 35px; /* Rounded corners for the button */
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        font-weight: bold;
+    }
+    
+    .about-section button:hover {
+        background-color: #CE1127; /* Darker blue on hover for visual feedback */
+    }
+    

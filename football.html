@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUYASA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.ico">
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Other Meta Tags -->
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+
+
+    <style>
+        .custom_body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .custom_container {
+            height: auto;
+        }
+
+        .custom_container img {
+            margin-top: 45em;
+        }
+        .custom_container_cent{
+            padding: 100px;
+        }
+        .custom_tab_box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .custom_tab_box .custom_tab_btn.active {
+            color: #7360ff;
+        }
+
+        .custom_tab_box .custom_tab_btn {
+            font-size: 18px;
+            font-weight: 600;
+            color: #919191;
+            background: none;
+            border: none;
+            padding: 18px;
+            cursor: pointer;
+        }
+
+        .custom_content_box {
+            padding: 20px;
+        }
+
+        .custom_content_box .custom_content {
+            display: none;
+        }
+
+        .custom_content_box .custom_content h2 {
+            margin-bottom: 10px;
+        }
+
+        .custom_content_box .custom_content.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body class="custom_body">
+    <nav class="navbar">
+        <a href="/" class="logo"><img src="/assets/images/kuyasa projects RED.svg" alt="Your Logo"></a>
+        <div class="nav-links">
+            <a href="/link1">Home</a>
+            <a href="/link2">Mission</a>
+            <a href="/link3">About</a>
+            <a href="/link4">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <div class="custom_container">
+        <div class="custom_container_cent">
+            <img src="./assets/images/img1.png" alt="">
+            <h2>ZANZIBAR MEDICAL PROJECT</h2>
+            <p>Volunteer in Zanzibar as a medical assistant and help out in hospitals or clinics in the fascinating historic
+                Stone Town.</p>
+            <table>
+                <tr>
+                    <td>Minimum Duration:</td>
+                    <td>2 weeks</td>
+                </tr>
+                <tr>
+                    <td>Cost:</td>
+                    <td>Cost €200 per week</td>
+                </tr>
+                <tr>
+                    <td>Minimum Age:</td>
+                    <td>18 years</td>
+                </tr>
+            </table>
+    
+            <div class="custom_container">
+                <div class="custom_tab_box">
+                    <button class="custom_tab_btn">Details</button>
+                    <button class="custom_tab_btn">What's Included</button>
+                    <button class="custom_tab_btn">What's Not Included</button>
+                    <button class="custom_tab_btn">Arriving Dates</button>
+                    <button class="custom_tab_btn">Location</button>
+                    <button class="custom_tab_btn">Gallery</button>
+                </div>
+                <div class="custom_content_box">
+                    <div class="custom_content">
+                        <h2>Details</h2>
+                        <p>In Malawi football and netball has taken the hearts many,there is less investment and attention
+                            in other sports.So it is our calling to create an opportunity to develop young generation vision
+                            in every sport especially girls.There has been lack of girls participation in sports due to
+                            culture and costs required to provide equipment for some sports.Through our volunteer sports
+                            projects the girls and children are now able to take part in the sports they love .By bringing
+                            your couching skills and your love for sports can create positive physical health ,life skills
+                            ,social skills and personal development to these girls and children from poor disadvantaged
+                            communities.
+                            <br>
+                            If the sport you are interested to couch or take part in is not listed above don’t be
+                            discouraged you can let us know which sport you’re interested .
+                        </p>
+                    </div>
+                    <div class="custom_content">
+                        <h2>What's Included</h2>
+                        <h3>Accommodation</h3>
+                        <p>During your stay with us, you'll reside in our volunteer home, where each room accommodates up to
+                            four individuals, featuring comfortable bunk beds for a restful night's sleep. Our facilities
+                            include shared showers and toilets, ensuring convenience for all residents. Additionally, communal areas
+                            are available for relaxation, equipped with amenities such as television, games, and Wi-Fi access.
+                            For those seeking added privacy, double rooms are available for an extra fee—please reach out to us to
+                            inquire about availability.
+                        </p>
+                        <h3>Meals</h3>
+                        <p>We provide three delicious meals a day, ensuring you're well-nourished throughout
+                            your volunteering experience.
+                        </p>
+                        <h3>Transportation</h3>
+                        <p>Transportation from Monday to Friday is provided as part of the package, to and from the projects location. However, you are responsible for arranging your own transportation to the volunteer location. Arrival information will be provided to you after booking.
+                        </p>
+                    </div>                    
+                    <div class="custom_content">
+                        <h2>What's Not Included</h2>
+                        <p>What's excluded from the package are travel insurance, visas, pocket money, flights, and personal luxuries such
+                            as snacks, beverages, and weekend trips expenses. Starting date— You can start any time throughout the year.
+                            We encourage you to arrive on a weekend so that you can begin on Monday or Tuesday. If you are arriving earlier,
+                            please let us know. Public holidays and weekends are non-working days for the project. Since we provide other
+                            projects besides sports, you are welcome to join as well. No certificate or experience is required to coach,
+                            but an understanding of the game and fitness are important.
+                        </p>
+                    </div>
+                    <div class="custom_content">
+                        <h2>Arriving Dates</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Iusto optio blanditiis quasi sequi cumque aliquid ea nesciunt
+                            perspiciatis, ducimus similique itaque, esse vel asperiores
+                            pariatur reiciendis ipsum dolores repellat iste.
+                        </p>
+                    </div>
+                    <div class="custom_content">
+                        <h2>Location</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Iusto optio blanditiis quasi sequi cumque aliquid ea nesciunt
+                            perspiciatis, ducimus similique itaque, esse vel asperiores
+                            pariatur reiciendis ipsum dolores repellat iste.
+                        </p>
+                    </div>
+                    <div class="custom_content">
+                        <h2>Gallery</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Iusto optio blanditiis quasi sequi cumque aliquid ea nesciunt
+                            perspiciatis, ducimus similique itaque, esse vel asperiores
+                            pariatur reiciendis ipsum dolores repellat iste.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <button>Book Here</button>
+        </div>
+      
+
+        <footer class="footer">
+            <div class="footer-section">
+                <h6>TRAVEL EXPERIENCES</h6>
+                <ul>
+                    <li>Volunteer experiences</li>
+                    <li>Internship experiences</li>
+                    <li>Travel experiences</li>
+                    <li>School groups</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h6>ABOUT GO WITH KHAYA</h6>
+                <ul>
+                    <li>About us</li>
+                    <li>Latest news</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h6>BOOK YOUR TRIP</h6>
+                <ul>
+                    <li>Book now</li>
+                    <li>Chat to a coordinator</li>
+                    <li>Find Go With Khaya HQ on map</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h6>ABOUT GO WITH KHAYA</h6>
+                <p>
+                    At Go With Khaya, we make our volunteers feel that they belong. If you choose Go With Khaya to
+                    organize your volunteering experience, you will feel secure and well-informed. You will also feel
+                    that you belong to the project you decide to work with, as Go With Khaya fits the right people to
+                    the right projects.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener"><i class="fab fa-youtube"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a href="https://za.pinterest.com/" target="_blank" rel="noopener"><i class="fab fa-pinterest-p"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+        <section class="footer-info">
+            © 2023 | Developed by Munashe
+        </section>
+
+</body>
+
+</html>
+<script>
+    const tabs = document.querySelectorAll('.custom_tab_btn');
+    const all_content = document.querySelectorAll('.custom_content');
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(tab => { tab.classList.remove('active') });
+            tab.classList.add('active');
+
+            // Hide all content boxes
+            all_content.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Show the corresponding content box
+            all_content[index].classList.add('active');
+        });
+    });
+</script>
+</body>
+
+</html>
